@@ -18,9 +18,10 @@ bindkey -v
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.iterm2_shell_integration.zsh
+# source ~/.iterm2_shell_integration.zsh
 
 alias vim=nvim
+alias tmuxa="tmux a -t"
 ide() {
   tmux new-session -s "ide" -d
   tmux split-window -v -p 20 -c "#{pane_current_path}"
@@ -32,3 +33,7 @@ ide() {
 # kitty 远程链接ssh会出现问题，使用下面方式
 # https://wiki.archlinux.org/title/kitty#Terminal_issues_with_SSH
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
+alias ..="cd .."
+alias ...="cd ../.."
+
