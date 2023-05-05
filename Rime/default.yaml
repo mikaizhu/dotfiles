@@ -79,6 +79,7 @@ ascii_composer:
 #              '|' 是半角的，
 #              '~' 是半角的，
 #              '`'（反引号）没有改成 '·'（间隔号）。
+#
 punctuator:
   full_shape:
     ' ' : { commit: '　' }
@@ -173,6 +174,7 @@ key_binder:
     - { when: composing, accept: Tab, send: Shift+Right }
     # 中英文切换
     - { when: always, accept: Control+space, toggle: ascii_mode }
+    - { when: always, accept: Contorl+l, toggle: ascii_mode }
     # Tab / Shift+Tab 翻页
     # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
     # - { when: has_menu, accept: Tab, send: Page_Down }
