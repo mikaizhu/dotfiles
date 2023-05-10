@@ -8,6 +8,8 @@
 # 一些韵母前四位顺序改为「一声、二声、三声、四声、其他...」如输入 va 得到 ā á ǎ à
 #
 # version: 2023-04-11
+# ref: https://unicode.org/emoji/charts/full-emoji-list.html
+# ref: https://www.emojiall.com/zh-hans/all-emojis
 
 symbols:
 #符号、电脑
@@ -251,8 +253,7 @@ symbols:
 
   # 以下开始为自己添加的
   # my own config
-  # ref: https://unicode.org/emoji/charts/full-emoji-list.html
-  'vxiaol': [🌝, 🌚, 😂, 😏, 🤣, 😉, 😊, 🙂, 🙃, 😋, 😎, 🤗, 😛, 🤪, 🤭]
+  'vxl': [🌝, 🌚, 😂, 😏, 🤣, 😉, 😊, 🙂, 🙃, 😋, 😎, 🤗, 😛, 🤪, 🤭]
   'vxiaolian': [🌝, 🌚, 😂, 😏, 🤣, 😉, 😊, 🙂, 🙃, 😋, 😎, 🤗, 😛, 🤪, 🤭]
   'vheilian' : [🌚]
   'vwuwu': [🥹, 😭, 🥺]
@@ -263,12 +264,12 @@ symbols:
   'vkunhuo' : [ 😵‍💫 ]
   'vjingya' : [😲, 😳, 😯]
   'vhaqie' : [🥱]
-  'vxiaocou': [🤡]
+  'vxiaochou': [🤡]
   'vtubiao': [📌, 📍]
   'vcaihong': [🌈]
-  'vtodo' : [✅, 📝, ✏, 🗒]
-  'vzhuyi' : [❗]
-  'vyiwen' : [❓]
+  'vtodo' : [✅, ⭕, 📝, ✏, 🗒]
+  'vgantanhao' : [❗]
+  'vwenhao' : [❓]
   'vliwu' : [🎁]
   'vdiannao' : [💻]
   'vzhu' : [🐷, 🐽, 🐗, 🐖]
