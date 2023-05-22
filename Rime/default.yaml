@@ -60,7 +60,7 @@ ascii_composer:
   switch_key:
     Caps_Lock: clear      # commit_code | commit_text | clear
     Shift_L: noop  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
+    Shift_R: inline_ascii         # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
     Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
 
@@ -173,7 +173,7 @@ key_binder:
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
     - { when: composing, accept: Tab, send: Shift+Right }
     # 中英文切换
-    - { when: always, accept: Control+space, toggle: ascii_mode }
+    # - { when: always, accept: Control+space, toggle: ascii_mode }
     - { when: always, accept: Contorl+l, toggle: ascii_mode }
     # Tab / Shift+Tab 翻页
     # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
